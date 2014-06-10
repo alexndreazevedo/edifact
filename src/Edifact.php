@@ -13,7 +13,7 @@ Output a multidimensional array.
 	Json $c->getJson()
 */
 
-class EDIParser
+class Edifact
 {
 	public $parsedfile;
 	private $obj;
