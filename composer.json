@@ -1,10 +1,16 @@
 {
     "name": "alexndreazevedo/edifact",
     "description": "EDIFACT PHP Parser",
-    "keywords": ["alexndreazevedo", "edifact", "parser", "PHP"],
-    "type": "library",
     "homepage": "https://github.com/alexndreazevedo/edifact",
-    "license": "Apache2",
+    "type": "library",
+    "license": ["Apache-2.0"],
+    "version": "dev-master",
+    "autoload": {
+        "psr-0": {
+            "Edifact": "src/"
+        },
+        "files": ["src/Edifact.php"]
+    },
     "authors": [
         {
             "name": "Alexandre Azevedo",
@@ -13,12 +19,5 @@
     ],
     "require": {
         "php": ">=5.3.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "3.7.*"
-    },
-    "autoload": {
-        "classmap": ["src"],
-        "psr-0": {"": "src/"}
     }
 }
